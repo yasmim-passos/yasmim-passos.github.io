@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio | Seu Nome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="img/profile.png" alt="Foto de perfil" class="profile-img">
+        <h1>Seu Nome</h1>
+        <p>Estudante de Sistemas de Informação • Desenvolvedor em formação</p>
+        <button id="toggle-theme">🌙 Dark Mode</button>
+    </div>
+</header>
+
+<main>
+
+<section>
+    <h2>Sobre mim</h2>
+    <p>
+        Sou estudante de Sistemas de Informação, com experiência em Python, Java,
+        C/C++ e conhecimentos básicos em SQL. Tenho interesse em desenvolvimento
+        de software, lógica de programação e tecnologia.
+    </p>
+</section>
+
+<section>
+    <h2>Habilidades</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>Git</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
+<section>
+    <h2>Projetos</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <img src="img/project-placeholder.png" alt="Projeto Python">
+            <h3>Sistema de Cadastro em Python</h3>
+            <p>CRUD em Python com armazenamento em arquivo e menu interativo.</p>
+            <a href="#" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project-placeholder.png" alt="Projeto Java">
+            <h3>Sistema de Biblioteca em Java</h3>
+            <p>Aplicação Java orientada a objetos para gerenciamento de livros.</p>
+            <a href="#" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project-placeholder.png" alt="Projeto C">
+            <h3>Estruturas de Dados em C</h3>
+            <p>Implementação de listas, filas e pilhas em C.</p>
+            <a href="#" target="_blank">Ver no GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project-placeholder.png" alt="Projeto SQL">
+            <h3>Banco de Dados Escolar</h3>
+            <p>Modelagem e scripts SQL para sistema escolar.</p>
+            <a href="#" target="_blank">Ver no GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Contato</h2>
+    <p>Email: seuemail@email.com</p>
+    <p>GitHub: <a href="https://github.com/seuusuario">github.com/seuusuario</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/seunome</a></p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 • Seu Nome</p>
+</footer>
+
+<script>
+    const button = document.getElementById("toggle-theme");
+    button.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+    });
+</script>
+
+</body>
+</html>
