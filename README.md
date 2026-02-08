@@ -212,20 +212,6 @@ localStorage.setItem('theme', 'dark');
 
 ---
 
-## 🎨 Comparação: Antes vs Depois
-
-| Aspecto | Antes | Depois |
-|---------|-------|--------|
-| **Design** | Básico | **Design System** |
-| **Projetos** | 6 básicos | **6 profissionais** |
-| **Dados** | Estáticos | **Dashboard dinâmico** |
-| **CSS** | Inline | **CSS Variables** |
-| **Responsivo** | Sim | **Mobile-first** |
-| **Dark Mode** | Simples | **Persistente** |
-| **A11y** | Básico | **WCAG AA** |
-
----
-
 ## 🚀 Próximos Passos
 
 - [ ] Adicionar gráficos com Chart.js
