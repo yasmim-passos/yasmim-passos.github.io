@@ -2,119 +2,148 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio | Yasmim Passos</title>
-    <link rel="icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Portfólio Profissional de Yasmim Passos - Desenvolvedora Full Stack">
+    <title>Yasmim Passos | Portfolio Professional</title>
+    <link rel="icon" href="img/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-<header>
-    <div class="header-content">
-        <img src="img/profile.png" alt="Foto de perfil" class="profile-img">
-        <h1>Yasmim Passos</h1>
-        <p>Estudante de Sistemas de Informação • Desenvolvedora em formação</p>
-        <button id="toggle-theme">🌙 Modo Escuro/Dark Mode</button>
-    </div>
-</header>
-
-<main>
-
-<section>
-    <h2>Sobre mim</h2>
-    <p>
-        Sou estudante de Sistemas de Informação na UFS, com experiência em Python, Java,
-        C/C++ e conhecimentos básicos em SQL e HTML/CSS. Tenho interesse em desenvolvimento
-        de software, lógica de programação e tecnologia.
-    </p>
-</section>
-
-<section>
-    <h2>Habilidades</h2>
-    <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>C</span>
-        <span>C++</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>SQL</span>
-        <span>Git</span>
-        <span>GitHub</span>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projetos</h2>
-
-    <div class="projects-container">
-
-        <div class="project-card">
-            <img src="img/python.png" alt="Projeto Python">
-            <h3>Sistema de Cadastro em Python</h3>
-            <p>CRUD em Python com armazenamento em arquivo e menu interativo.</p>
-            <a href="https://github.com/yasmim-passos/python-gerenciador-tarefas" target="_blank">Ver no GitHub</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="text-gradient">YP</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
         </div>
+    </nav>
 
-        <div class="project-card">
-            <img src="img/java.png" alt="Projeto Java">
-            <h3>Sistema de Biblioteca em Java</h3>
-            <p>Aplicação Java orientada a objetos para gerenciamento de livros.</p>
-            <a href="https://github.com/yasmim-passos/java-sistema-biblioteca" target="_blank">Ver no GitHub</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge">Disponível para Oportunidades</span>
+                </div>
+                <h1 class="hero-title">
+                    Olá, sou <span class="text-gradient">Yasmim Passos</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Desenvolvedora Full Stack | Especialista em Arquitetura de Software
+                </p>
+                <p class="hero-description">
+                    Transformo código complexo em soluções elegantes. Especializada em 
+                    refatoração, design patterns e arquiteturas escaláveis.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="img/c.png" alt="Projeto C">
-            <h3>Estruturas de Dados em C</h3>
-            <p>Implementação de listas, filas e pilhas em C.</p>
-            <a href="https://github.com/yasmim-passos/c-sistema-alunos" target="_blank">Ver no GitHub</a>
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio Dashboard</h2>
+                <p>Métricas e estatísticas dos meus projetos</p>
+            </div>
+            
+            <div class="metrics-grid" id="metricsGrid">
+                <!-- Metrics cards will be inserted here by JavaScript -->
+            </div>
+
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projetos em Destaque</h2>
+                <p>Trabalhos que demonstram expertise em arquitetura e design patterns</p>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be inserted here by JavaScript -->
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="img/cpp.png" alt="Projeto C++">
-            <h3>Jogo Queah em C++</h3>
-            <p>Implementação do jogo Queah usando arquivos e biblioteca gráfica raylib.</p>
-            <a href="https://github.com/yasmim-passos/cpp-jogo-queah" target="_blank">Ver no GitHub</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Stack Tecnológico</h2>
+                <p>Linguagens, frameworks e ferramentas</p>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills will be inserted here by JavaScript -->
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="img/html-css.png" alt="Projeto HTML/CSS">
-            <h3>Portfólio com HTML/CSS</h3>
-            <p>Implementação deste portfólio com hospedagem no GitHub Pages.</p>
-            <a href="https://github.com/yasmim-passos/yasmim-passos.github.io" target="_blank">Ver no GitHub</a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vamos Trabalhar Juntos?</h2>
+                <p>Estou disponível para oportunidades e projetos interessantes</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:passosyasmim08@gmail.com" class="contact-card">
+                    <span class="contact-icon">📧</span>
+                    <h3>Email</h3>
+                    <p>passosyasmim08@gmail.com</p>
+                </a>
+                <a href="https://github.com/yasmim-passos" class="contact-card" target="_blank">
+                    <span class="contact-icon">💻</span>
+                    <h3>GitHub</h3>
+                    <p>github.com/yasmim-passos</p>
+                </a>
+                <a href="https://www.linkedin.com/in/yasmim-passos-037676212/" class="contact-card" target="_blank">
+                    <span class="contact-icon">💼</span>
+                    <h3>LinkedIn</h3>
+                    <p>yasmim-passos</p>
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <img src="img/sql.png" alt="Projeto SQL">
-            <h3>Banco de Dados Escolar com SQL</h3>
-            <p>Modelagem e scripts SQL para sistema escolar.</p>
-            <a href="https://github.com/yasmim-passos/sql-sistema-escolar" target="_blank">Ver no GitHub</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Yasmim Passos • Desenvolvido com Design System próprio</p>
         </div>
+    </footer>
 
-    </div>
-</section>
-
-<section>
-    <h2>Contato</h2>
-    <p>Email: passosyasmim08@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/yasmim-passos">github.com/yasmim-passos</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yasmim-passos-037676212/">www.linkedin.com/in/yasmim-passos-037676212/</a></p>
-</section>
-
-</main>
-
-<footer>
-    <p>© 2026 • Yasmim Passos</p>
-</footer>
-
-<script>
-    const button = document.getElementById("toggle-theme");
-    button.addEventListener("click", () => {
-        document.body.classList.toggle("dark");
-    });
-</script>
-
+    <!-- Scripts -->
+    <script src="data/projects.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
-<!-- deploy test -->

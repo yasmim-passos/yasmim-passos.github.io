@@ -1,0 +1,127 @@
+/* Main Styles - Additional Component Styles */
+
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+  background: var(--color-surface-elevated);
+}
+
+.project-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin-top: var(--spacing-xs);
+}
+
+.project-description {
+  margin: var(--spacing-md) 0;
+  line-height: var(--line-height-relaxed);
+}
+
+.project-metrics {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.metric-small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.project-highlights {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.project-highlights ul {
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+}
+
+.project-highlights li {
+  margin: var(--spacing-xs) 0;
+  color: var(--color-text-secondary);
+}
+
+.skill-category {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  margin-top: var(--spacing-xs);
+}
+
+.metric-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.project-card,
+.metric-card,
+.skill-card {
+  animation: fadeIn 0.6s ease-out backwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus Styles */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .btn,
+  .footer {
+    display: none;
+  }
+}
