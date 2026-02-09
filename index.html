@@ -1,149 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio Profissional de Yasmim Passos - Desenvolvedora Full Stack">
-    <title>Yasmim Passos | Portfolio Professional</title>
-    <link rel="icon" href="img/favicon.ico">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/design-system.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasmim Passos | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css">
+<link rel="stylesheet" href="css/design-system.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="text-gradient">YP</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme">
-                <span class="icon-sun">☀️</span>
-                <span class="icon-moon">🌙</span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge">Disponível para Oportunidades</span>
-                </div>
-                <h1 class="hero-title">
-                    Olá, sou <span class="text-gradient">Yasmim Passos</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Desenvolvedora Full Stack | Especialista em Arquitetura de Software
-                </p>
-                <p class="hero-description">
-                    Transformo código complexo em soluções elegantes. Especializada em 
-                    refatoração, design patterns e arquiteturas escaláveis.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="container">
 
-    <!-- Dashboard Section -->
-    <section id="dashboard" class="dashboard-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Portfolio Dashboard</h2>
-                <p>Métricas e estatísticas dos meus principais projetos</p>
-            </div>
-            
-            <div class="metrics-grid" id="metricsGrid">
-                <!-- Metrics cards will be inserted here by JavaScript -->
-            </div>
+<div class="nav-brand">
+<span class="text-gradient">YP</span>
+</div>
 
-            </div>
-    </section>
+<ul class="nav-menu">
+<li><a href="#home" data-i18n="nav.home">Home</a></li>
+<li><a href="#dashboard" data-i18n="nav.dashboard">Dashboard</a></li>
+<li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+<li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+<li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+</ul>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projetos em Destaque</h2>
-                <p>Trabalhos que demonstram expertise em arquitetura e design patterns</p>
-            </div>
+<div class="nav-actions">
+<div class="lang-group">
+<button class="btn-icon lang-flag" data-lang="pt"><span class="fi fi-br"></span></button>
+<button class="btn-icon lang-flag" data-lang="en"><span class="fi fi-gb"></span></button>
+<button class="btn-icon lang-flag" data-lang="es"><span class="fi fi-es"></span></button>
+</div>
 
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Project cards will be inserted here by JavaScript -->
-            </div>
-        </div>
-    </section>
+<button id="theme-toggle" class="btn-icon">
+<span class="icon-sun">☀️</span>
+<span class="icon-moon">🌙</span>
+</button>
+</div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Stack Tecnológico</h2>
-                <p>Linguagens, frameworks e ferramentas</p>
-            </div>
+</div>
+</nav>
 
-            <div class="skills-grid" id="skillsGrid">
-                <!-- Skills will be inserted here by JavaScript -->
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home" class="hero">
+<div class="container">
+<div class="hero-content">
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vamos Trabalhar Juntos?</h2>
-                <p>Estou disponível para oportunidades e projetos interessantes</p>
-            </div>
+<div class="hero-badge">
+<span class="badge" data-i18n="hero.badge">
+Disponível para Oportunidades
+</span>
+</div>
 
-            <div class="contact-grid">
-                <a href="mailto:passosyasmim08@gmail.com" class="contact-card">
-                    <span class="contact-icon">📧</span>
-                    <h3>Email</h3>
-                    <p>passosyasmim08@gmail.com</p>
-                </a>
-                <a href="https://github.com/yasmim-passos" class="contact-card" target="_blank">
-                    <span class="contact-icon">💻</span>
-                    <h3>GitHub</h3>
-                    <p>github.com/yasmim-passos</p>
-                </a>
-                <a href="https://www.linkedin.com/in/yasmim-passos-037676212/" class="contact-card" target="_blank">
-                    <span class="contact-icon">💼</span>
-                    <h3>LinkedIn</h3>
-                    <p>yasmim-passos</p>
-                </a>
-            </div>
-        </div>
-    </section>
+<h1 class="hero-title">
+<span data-i18n="hero.greeting">Olá, sou</span>
+<span class="text-gradient">Yasmim Passos</span>
+</h1>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Yasmim Passos • Desenvolvido com Design System próprio</p>
-        </div>
-    </footer>
+<p class="hero-subtitle" data-i18n="hero.role">
+Desenvolvedora Full Stack | Especialista em Arquitetura de Software
+</p>
 
-    <!-- Scripts -->
-    <script src="data/projects.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/dashboard.js"></script>
-    <script src="js/main.js"></script>
+<p class="hero-description" data-i18n="hero.description">
+Transformo código complexo em soluções elegantes.
+</p>
+
+<div class="hero-actions">
+<a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">
+Ver Projetos
+</a>
+
+<a href="#contact" class="btn btn-secondary" data-i18n="hero.contact">
+Entrar em Contato
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="dashboard-section">
+<div class="container">
+
+<div class="section-header">
+<h2 data-i18n="dashboard.title">Portfolio Dashboard</h2>
+<p data-i18n="dashboard.subtitle">Métricas e estatísticas</p>
+</div>
+
+<div class="metrics-grid" id="metricsGrid"></div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+<div class="container">
+
+<div class="section-header">
+<h2 data-i18n="projects.title">Projetos em Destaque</h2>
+<p data-i18n="projects.subtitle">
+Trabalhos que demonstram expertise
+</p>
+</div>
+
+<div id="projectsGrid" class="projects-grid"></div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+<div class="container">
+
+<div class="section-header">
+<h2 data-i18n="skills.title">Stack Tecnológico</h2>
+<p data-i18n="skills.subtitle">Linguagens e ferramentas</p>
+</div>
+
+<div id="skillsGrid" class="projects-grid"></div>
+
+</div>
+</section>
+
+<!-- SOFT SKILLS -->
+<section id="softskills" class="skills-section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 data-i18n="softSkills.title">Soft Skills</h2>
+      <p data-i18n="softSkills.subtitle">
+        Competências comportamentais e interpessoais
+      </p>
+    </div>
+
+    <div id="softSkillsGrid" class="projects-grid"></div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+<div class="container">
+
+<div class="section-header">
+<h2 data-i18n="contact.title">Vamos Trabalhar Juntos?</h2>
+<p data-i18n="contact.subtitle">Disponível para oportunidades</p>
+</div>
+
+<div class="contact-grid">
+
+<a href="mailto:passosyasmim08@gmail.com" class="contact-card">
+<span class="contact-icon">📧</span>
+<h3 data-i18n="contact.email">Email</h3>
+<p>passosyasmim08@gmail.com</p>
+</a>
+
+<a href="https://github.com/yasmim-passos" target="_blank" class="contact-card">
+<span class="contact-icon">💻</span>
+<h3 data-i18n="contact.github">GitHub</h3>
+<p>github.com/yasmim-passos</p>
+</a>
+
+<a href="https://linkedin.com" target="_blank" class="contact-card">
+<span class="contact-icon">💼</span>
+<h3 data-i18n="contact.linkedin">LinkedIn</h3>
+<p>yasmim-passos</p>
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<p>© 2026 Yasmim Passos</p>
+</div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="data/translations.js"></script>
+<script src="data/projects.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
