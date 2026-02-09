@@ -131,6 +131,39 @@ const PROJECTS = [
       'CSS Variables'
     ],
     level: 'Pleno'
+  },
+  {
+    id: 7,
+    title: 'E-Commerce Microservices Platform',
+    subtitle: '.NET 8 | Microservices | DDD | Clean Architecture',
+    description: 'Plataforma de e-commerce distribuída baseada em microsserviços usando .NET 8, Domain-Driven Design, Clean Architecture, PostgreSQL, RabbitMQ e Docker.',
+    tags: [
+      '.NET 8',
+      'C#',
+      'Microservices',
+      'DDD',
+      'Clean Architecture',
+      'PostgreSQL',
+      'RabbitMQ',
+      'Docker',
+      'EF Core'
+    ],
+    github: 'https://github.com/yasmim-passos/dotNet-ecommerce-microservices',
+    metrics: {
+      loc: 4200,
+      files: 52,
+      coverage: 70,
+      complexity: 'Muito Alta'
+    },
+    highlights: [
+      'Clean Architecture (Domain / Application / Infrastructure / API)',
+      'Domain-Driven Design (Aggregates, Value Objects, Domain Events)',
+      'Entity Framework Core + PostgreSQL',
+      'RabbitMQ (MassTransit ready)',
+      'Docker + Docker Compose',
+      'Preparado para Kubernetes'
+    ],
+    level: 'Sênior'
   }
 ];
 

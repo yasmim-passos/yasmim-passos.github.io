@@ -45,7 +45,6 @@ const TRANSLATIONS = {
       skills: [
           { icon:'🐍', name:'Python', category:'Language', level:95 },
           { icon:'☕', name:'Java', category:'Language', level:90 },
-          { icon:'💜', name:'C#', category:'Language', level:85 },
           { icon:'🔵', name:'.NET', category:'Platform', level:85 },
 
           { icon:'🧠', name:'C', category:'Language', level:80 },
@@ -62,7 +61,8 @@ const TRANSLATIONS = {
           { icon:'🍃', name:'Spring Boot', category:'Framework', level:95 },
 
           { icon:'🐳', name:'Docker', category:'DevOps', level:85 },
-          { icon:'🔧', name:'Git', category:'Tools', level:90 }
+          { icon:'🔧', name:'Git', category:'Tools', level:90 },
+          { icon:'🛠️', name:'GitHub', category:'Tools', level:90 }
       ]
     },
 
@@ -79,6 +79,7 @@ const TRANSLATIONS = {
         { icon:'🎯', name:'Foco em Qualidade', description:'Comprometimento com boas práticas e código limpo' },
         { icon:'⚡', name:'Adaptabilidade', description:'Flexibilidade para novos desafios e tecnologias' },
         { icon:'⏰', name:'Gestão do Tempo', description:'Organização e cumprimento de prazos' },
+        { icon:'🌐', name:'Comunicação Técnica', description:'Explicação clara de conceitos técnicos para diferentes públicos e equipes' },
         { icon:'💡', name:'Resolução de Problemas', description:'Análise crítica e soluções criativas' }
       ]
     },
@@ -107,7 +108,7 @@ const TRANSLATIONS = {
       badge: 'Available for Opportunities',
       greeting: "Hi, I'm",
       role: 'Full Stack Developer | Software Architecture Specialist',
-      description: 'I transform complex code into elegant solutions. Specialized in refactoring, design patterns and scalable architectures.',
+      description: 'I transform complex code into elegant solutions. Specialized in refactoring, design patterns and scalable architectures',
       viewProjects: 'View Projects',
       contact: 'Get in Touch'
     },
@@ -136,7 +137,6 @@ const TRANSLATIONS = {
     skills: [
         { icon:'🐍', name:'Python', category:'Language', level:95 },
         { icon:'☕', name:'Java', category:'Language', level:90 },
-        { icon:'💜', name:'C#', category:'Language', level:85 },
         { icon:'🔵', name:'.NET', category:'Platform', level:85 },
 
         { icon:'🧠', name:'C', category:'Language', level:80 },
@@ -153,7 +153,8 @@ const TRANSLATIONS = {
         { icon:'🍃', name:'Spring Boot', category:'Framework', level:95 },
 
         { icon:'🐳', name:'Docker', category:'DevOps', level:85 },
-        { icon:'🔧', name:'Git', category:'Tools', level:90 }
+        { icon:'🔧', name:'Git', category:'Tools', level:90 },
+        { icon:'🛠️', name:'GitHub', category:'Tools', level:90 }
       ]
     },
 
@@ -169,6 +170,7 @@ const TRANSLATIONS = {
         { icon:'🎯', name:'Quality Focus', description:'Commitment to best practices and clean code' },
         { icon:'⚡', name:'Adaptability', description:'Flexibility for new challenges and technologies' },
         { icon:'⏰', name:'Time Management', description:'Organization and meeting deadlines' },
+        { icon:'🌐', name:'Technical Communication', description:'Clear explanation of technical concepts for different audiences and teams' },
         { icon:'💡', name:'Problem Solving', description:'Critical analysis and creative solutions' }
       ]
     },
@@ -226,7 +228,6 @@ const TRANSLATIONS = {
     skills: [
         { icon:'🐍', name:'Python', category:'Language', level:95 },
         { icon:'☕', name:'Java', category:'Language', level:90 },
-        { icon:'💜', name:'C#', category:'Language', level:85 },
         { icon:'🔵', name:'.NET', category:'Platform', level:85 },
 
         { icon:'🧠', name:'C', category:'Language', level:80 },
@@ -243,7 +244,8 @@ const TRANSLATIONS = {
         { icon:'🍃', name:'Spring Boot', category:'Framework', level:95 },
 
         { icon:'🐳', name:'Docker', category:'DevOps', level:85 },
-        { icon:'🔧', name:'Git', category:'Tools', level:90 }
+        { icon:'🔧', name:'Git', category:'Tools', level:90 },
+        { icon:'🛠️', name:'GitHub', category:'Tools', level:90 }
       ]
     },
 
@@ -259,6 +261,7 @@ const TRANSLATIONS = {
         { icon:'🎯', name:'Enfoque en Calidad', description:'Compromiso con buenas prácticas y código limpio' },
         { icon:'⚡', name:'Adaptabilidad', description:'Flexibilidad para nuevos desafíos y tecnologías' },
         { icon:'⏰', name:'Gestión del Tiempo', description:'Organización y cumplimiento de plazos' },
+        { icon:'🌐', name:'Comunicación Técnica', description:'Explicación clara de conceptos técnicos para diferentes públicos y equipos.' },
         { icon:'💡', name:'Resolución de Problemas', description:'Análisis crítico y soluciones creativas' }
       ]
     },
