@@ -165,6 +165,29 @@ const PROJECTS = [
     ],
     level: 'Sênior'
   }
+  ,{
+    id: 6,
+    title: 'Task Manager API',
+    subtitle: 'C# | .NET | Clean Architecture',
+    description: 'API profissional de gerenciamento de tarefas com arquitetura em camadas, Entity Framework Core e padrões de serviço', 
+    tags: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'Docker'],
+    github: 'https://github.com/yasmim-passos/c-sharp-task-manager-api',
+    metrics: {
+      loc: 1200,
+      files: 12,
+      coverage: 0,
+      complexity: 'Alta'
+    },
+    highlights: [
+      'Clean Architecture',
+      'Service Layer Pattern',
+      'Entity Framework Core + PostgreSQL',
+      'RESTful API',
+      'Docker Ready'
+    ],
+    level: 'Pleno/Sênior'
+  }
+
 ];
 
 // Skills Database
@@ -181,6 +204,29 @@ const SKILLS = [
   { name: 'FastAPI', level: 85, category: 'Framework', icon: '⚡' },
   { name: 'Spring Boot', level: 80, category: 'Framework', icon: '🍃' },
   { name: 'PostgreSQL', level: 80, category: 'Database', icon: '🐘' }
+  ,{
+    id: 6,
+    title: 'Task Manager API',
+    subtitle: 'C# | .NET | Clean Architecture',
+    description: 'API profissional de gerenciamento de tarefas com arquitetura em camadas, Entity Framework Core e padrões de serviço', 
+    tags: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'Docker'],
+    github: 'https://github.com/yasmim-passos/c-sharp-task-manager-api',
+    metrics: {
+      loc: 1200,
+      files: 12,
+      coverage: 0,
+      complexity: 'Alta'
+    },
+    highlights: [
+      'Clean Architecture',
+      'Service Layer Pattern',
+      'Entity Framework Core + PostgreSQL',
+      'RESTful API',
+      'Docker Ready'
+    ],
+    level: 'Pleno/Sênior'
+  }
+
 ];
 
 // Metrics Calculation

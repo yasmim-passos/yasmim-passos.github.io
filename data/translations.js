@@ -26,9 +26,7 @@ const TRANSLATIONS = {
       projects: 'Projetos',
       loc: 'Linhas de Código',
       files: 'Arquivos',
-      technologies: 'Tecnologias',
-      seniorProjects: 'Projetos Sênior',
-      coverage: 'Cobertura Média'
+      technologies: 'Tecnologias'
     },
 
     projects: {
@@ -119,9 +117,7 @@ const TRANSLATIONS = {
       projects: 'Projects',
       loc: 'Lines of Code',
       files: 'Files',
-      technologies: 'Technologies',
-      seniorProjects: 'Senior Projects',
-      coverage: 'Average Coverage'
+      technologies: 'Technologies'
     },
 
     projects: {
@@ -210,9 +206,7 @@ const TRANSLATIONS = {
       projects: 'Proyectos',
       loc: 'Líneas de Código',
       files: 'Archivos',
-      technologies: 'Tecnologías',
-      seniorProjects: 'Proyectos Senior',
-      coverage: 'Cobertura Media'
+      technologies: 'Tecnologías'
     },
 
     projects: {

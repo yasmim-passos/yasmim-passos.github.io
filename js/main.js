@@ -62,16 +62,6 @@ function renderMetrics() {
       <div class="metric-value">${metrics.languages}</div>
       <div class="metric-label">${t.dashboard.technologies}</div>
     </div>
-
-    <div class="metric-card">
-      <div class="metric-value">${metrics.seniorProjects}</div>
-      <div class="metric-label">${t.dashboard.seniorProjects}</div>
-    </div>
-
-    <div class="metric-card">
-      <div class="metric-value">${metrics.avgCoverage}%</div>
-      <div class="metric-label">${t.dashboard.coverage}</div>
-    </div>
   `;
 }
 
