@@ -121,8 +121,6 @@ O dashboard calcula automaticamente:
 - **Linhas de Código**: ~14,000
 - **Arquivos Totais**: ~155
 - **Tecnologias**: 40+
-- **Projetos Sênior**: 7
-- **Cobertura Média**: ~30%
 
 ---
 
