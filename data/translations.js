@@ -22,7 +22,7 @@ const TRANSLATIONS = {
 
     dashboard: {
       title: 'Portfolio Dashboard',
-      subtitle: 'Métricas e estatísticas dos meus projetos',
+      subtitle: 'Métricas e estatísticas dos meus principais projetos',
       projects: 'Projetos',
       loc: 'Linhas de Código',
       files: 'Arquivos',
@@ -113,7 +113,7 @@ const TRANSLATIONS = {
 
     dashboard: {
       title: 'Portfolio Dashboard',
-      subtitle: 'Metrics and statistics of my projects',
+      subtitle: 'Metrics and statistics of my main projects',
       projects: 'Projects',
       loc: 'Lines of Code',
       files: 'Files',
@@ -202,7 +202,7 @@ const TRANSLATIONS = {
 
     dashboard: {
       title: 'Dashboard del Portfolio',
-      subtitle: 'Métricas y estadísticas de mis proyectos',
+      subtitle: 'Métricas y estadísticas de mis principales proyectos',
       projects: 'Proyectos',
       loc: 'Líneas de Código',
       files: 'Archivos',
