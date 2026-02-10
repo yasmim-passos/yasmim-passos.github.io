@@ -25,14 +25,15 @@ Portfólio profissional com **Design System próprio**, **Dashboard interativo**
 - Gráficos (opcionais)
 
 ### 🚀 Projetos Atualizados
-Todos os 7 projetos profissionais:
+Todos os 8 projetos profissionais:
 1. **Python** - Price Monitor API (FastAPI + Event Sourcing)
 2. **Java** - Payment Processor (Spring Boot + CQRS)
 3. **C** - Advanced Data Structures (B-Tree + Parser)
 4. **C++** - Queah Refactored (State Pattern + MVC)
 5. **SQL** - E-Commerce Database (RFM Analysis)
-6. **C# E .NET** - E-Commerce Microservices Platform
-7. **HTML/CSS** - Este portfólio
+6. **C# e .NET** - E-Commerce Microservices Platform
+7. **C# e API REST** - Task Manager API usando POO
+8. **HTML/CSS** - Este portfólio
 
 ### ♿ Acessibilidade (a11y)
 - Semântica HTML5
@@ -116,11 +117,11 @@ portfolio-professional/
 
 O dashboard calcula automaticamente:
 
-- **Total de Projetos**: 7
-- **Linhas de Código**: ~12,000
-- **Arquivos Totais**: ~145
-- **Tecnologias**: 35+
-- **Projetos Sênior**: 6
+- **Total de Projetos**: 8
+- **Linhas de Código**: ~14,000
+- **Arquivos Totais**: ~155
+- **Tecnologias**: 40+
+- **Projetos Sênior**: 7
 - **Cobertura Média**: ~30%
 
 ---
