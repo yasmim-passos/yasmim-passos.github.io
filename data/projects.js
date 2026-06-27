@@ -20,7 +20,6 @@ const PROJECTS = [
       'Test Coverage >80%',
       'Docker Compose'
     ],
-    level: 'Pleno/Sênior'
   },
   {
     id: 2,
@@ -42,51 +41,6 @@ const PROJECTS = [
       'Clean Architecture',
       'JUnit 5 Tests'
     ],
-    level: 'Pleno/Sênior'
-  },
-  {
-    id: 3,
-    title: 'Advanced Data Structures',
-    subtitle: 'C | Algorithms | Compilers',
-    description: 'B-Tree, Skip List e Math Expression Parser completo com Lexer, Parser, AST e Evaluator',
-    tags: ['C', 'Algorithms', 'Compilers', 'AST', 'Parsers'],
-    github: 'https://github.com/yasmim-passos/c-advanced-datastructures',
-    metrics: {
-      loc: 1500,
-      files: 9,
-      coverage: 0,
-      complexity: 'Muito Alta'
-    },
-    highlights: [
-      'B-Tree Implementation',
-      'Skip List (Probabilistic)',
-      'Math Expression Parser',
-      'Lexer + Parser + AST',
-      'Modern C (C11)'
-    ],
-    level: 'Sênior'
-  },
-  {
-    id: 4,
-    title: 'Queah Refactored',
-    subtitle: 'C++ | Game Dev | Design Patterns',
-    description: 'Refatoração completa: 1255 linhas monolíticas → arquitetura MVC com State Pattern e Modern C++17',
-    tags: ['C++17', 'Raylib', 'State Pattern', 'MVC', 'SOLID'],
-    github: 'https://github.com/yasmim-passos/cpp-queah-refactored',
-    metrics: {
-      loc: 800,
-      files: 15,
-      coverage: 0,
-      complexity: 'Média'
-    },
-    highlights: [
-      'State Pattern (7 estados)',
-      'MVC Architecture',
-      'SOLID Principles',
-      'Smart Pointers',
-      '200+ linhas → std::map'
-    ],
-    level: 'Sênior'
   },
   {
     id: 5,
@@ -108,7 +62,6 @@ const PROJECTS = [
       'Window Functions',
       'CTEs Recursivos'
     ],
-    level: 'Pleno/Sênior'
   },
   {
     id: 6,
@@ -130,7 +83,6 @@ const PROJECTS = [
       'Dark Mode',
       'CSS Variables'
     ],
-    level: 'Pleno'
   },
   {
     id: 7,
@@ -163,7 +115,6 @@ const PROJECTS = [
       'Docker + Docker Compose',
       'Preparado para Kubernetes'
     ],
-    level: 'Sênior'
   }
   ,{
     id: 6,
@@ -185,7 +136,6 @@ const PROJECTS = [
       'RESTful API',
       'Docker Ready'
     ],
-    level: 'Pleno/Sênior'
   }
 
 ];
@@ -204,29 +154,6 @@ const SKILLS = [
   { name: 'FastAPI', level: 85, category: 'Framework', icon: '⚡' },
   { name: 'Spring Boot', level: 80, category: 'Framework', icon: '🍃' },
   { name: 'PostgreSQL', level: 80, category: 'Database', icon: '🐘' }
-  ,{
-    id: 6,
-    title: 'Task Manager API',
-    subtitle: 'C# | .NET | Clean Architecture',
-    description: 'API profissional de gerenciamento de tarefas com arquitetura em camadas, Entity Framework Core e padrões de serviço', 
-    tags: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'Docker'],
-    github: 'https://github.com/yasmim-passos/c-sharp-task-manager-api',
-    metrics: {
-      loc: 1200,
-      files: 12,
-      coverage: 0,
-      complexity: 'Alta'
-    },
-    highlights: [
-      'Clean Architecture',
-      'Service Layer Pattern',
-      'Entity Framework Core + PostgreSQL',
-      'RESTful API',
-      'Docker Ready'
-    ],
-    level: 'Pleno/Sênior'
-  }
-
 ];
 
 // Metrics Calculation
@@ -238,7 +165,6 @@ function calculateTotalMetrics() {
     avgCoverage: Math.round(
       PROJECTS.reduce((sum, p) => sum + p.metrics.coverage, 0) / PROJECTS.length
     ),
-    languages: [...new Set(PROJECTS.flatMap(p => p.tags))].length,
-    seniorProjects: PROJECTS.filter(p => p.level.includes('Sênior')).length
+    languages: [...new Set(PROJECTS.flatMap(p => p.tags))].length
   };
 }

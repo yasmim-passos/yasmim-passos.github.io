@@ -107,7 +107,6 @@ async function renderProjects() {
         <div class="project-metrics">
           <div class="metric-small">📊 ${project.metrics.loc} LOC</div>
           <div class="metric-small">📁 ${project.metrics.files} files</div>
-          <div class="metric-small">🎯 ${project.level}</div>
         </div>
 
         <div class="project-highlights">
