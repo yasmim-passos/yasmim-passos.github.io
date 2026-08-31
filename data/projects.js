@@ -7,12 +7,6 @@ const PROJECTS = [
     description: 'Sistema profissional de monitoramento de preços com arquitetura event-driven, caching Redis e background tasks',
     tags: ['Python', 'FastAPI', 'Redis', 'Celery', 'PostgreSQL', 'Docker'],
     github: 'https://github.com/yasmim-passos/python-price-monitor',
-    metrics: {
-      loc: 2500,
-      files: 38,
-      coverage: 85,
-      complexity: 'Alta'
-    },
     highlights: [
       'Event Sourcing Architecture',
       'Redis Caching (TTL 5min)',
@@ -22,113 +16,27 @@ const PROJECTS = [
     ],
   },
   {
-    id: 2,
-    title: 'Payment Processor',
-    subtitle: 'Java | Spring Boot | CQRS',
-    description: 'Processador de pagamentos enterprise com Event Sourcing, CQRS e Saga Pattern implementando todas as fases de compilação',
-    tags: ['Java', 'Spring Boot', 'Event Sourcing', 'CQRS', 'JPA', 'H2'],
-    github: 'https://github.com/yasmim-passos/java-payment-processor',
-    metrics: {
-      loc: 1800,
-      files: 16,
-      coverage: 75,
-      complexity: 'Alta'
-    },
-    highlights: [
-      'Event Sourcing + CQRS',
-      'Saga Pattern',
-      'Domain-Driven Design',
-      'Clean Architecture',
-      'JUnit 5 Tests'
-    ],
-  },
-  {
-    id: 5,
-    title: 'E-Commerce Database',
-    subtitle: 'SQL | Analytics | Data Engineering',
-    description: 'Schema SQL enterprise com 16+ tabelas, stored procedures, triggers e queries analíticas avançadas (RFM, Cohort)',
-    tags: ['MySQL', 'SQL', 'Analytics', 'Procedures', 'Triggers'],
-    github: 'https://github.com/yasmim-passos/sql-e-commerce-database-schema',
-    metrics: {
-      loc: 1200,
-      files: 5,
-      coverage: 0,
-      complexity: 'Alta'
-    },
-    highlights: [
-      '16+ Tabelas Relacionadas',
-      'RFM Analysis',
-      'Cohort Analysis',
-      'Window Functions',
-      'CTEs Recursivos'
-    ],
-  },
-  {
     id: 6,
     title: 'Portfolio Professional',
-    subtitle: 'HTML/CSS/JS | Design System | Dashboard',
-    description: 'Portfólio com Design System próprio, dashboard interativo e métricas em tempo real',
+    subtitle: 'HTML/CSS/JS | Design System',
+    description: 'Portfólio com Design System próprio e suporte a tema claro/escuro e múltiplos idiomas',
     tags: ['HTML5', 'CSS3', 'JavaScript', 'Design System', 'A11y'],
     github: 'https://github.com/yasmim-passos/yasmim-passos.github.io',
-    metrics: {
-      loc: 800,
-      files: 10,
-      coverage: 0,
-      complexity: 'Média'
-    },
     highlights: [
       'Design System Próprio',
-      'Dashboard Interativo',
       'Responsive Design',
       'Dark Mode',
-      'CSS Variables'
+      'CSS Variables',
+      'Multilíngue (PT/EN/ES)'
     ],
   },
   {
-    id: 7,
-    title: 'E-Commerce Microservices Platform',
-    subtitle: '.NET 8 | Microservices | DDD | Clean Architecture',
-    description: 'Plataforma de e-commerce distribuída baseada em microsserviços usando .NET 8, Domain-Driven Design, Clean Architecture, PostgreSQL, RabbitMQ e Docker.',
-    tags: [
-      '.NET 8',
-      'C#',
-      'Microservices',
-      'DDD',
-      'Clean Architecture',
-      'PostgreSQL',
-      'RabbitMQ',
-      'Docker',
-      'EF Core'
-    ],
-    github: 'https://github.com/yasmim-passos/dotNet-ecommerce-microservices',
-    metrics: {
-      loc: 4200,
-      files: 52,
-      coverage: 70,
-      complexity: 'Muito Alta'
-    },
-    highlights: [
-      'Clean Architecture (Domain / Application / Infrastructure / API)',
-      'Domain-Driven Design (Aggregates, Value Objects, Domain Events)',
-      'Entity Framework Core + PostgreSQL',
-      'RabbitMQ (MassTransit ready)',
-      'Docker + Docker Compose',
-      'Preparado para Kubernetes'
-    ],
-  }
-  ,{
-    id: 6,
+    id: 8,
     title: 'Task Manager API',
     subtitle: 'C# | .NET | Clean Architecture',
     description: 'API profissional de gerenciamento de tarefas com arquitetura em camadas, Entity Framework Core e padrões de serviço', 
     tags: ['C#', '.NET', 'ASP.NET Core', 'Entity Framework Core', 'PostgreSQL', 'Docker'],
     github: 'https://github.com/yasmim-passos/c-sharp-task-manager-api',
-    metrics: {
-      loc: 1200,
-      files: 12,
-      coverage: 0,
-      complexity: 'Alta'
-    },
     highlights: [
       'Clean Architecture',
       'Service Layer Pattern',
@@ -137,34 +45,19 @@ const PROJECTS = [
       'Docker Ready'
     ],
   }
+  ,{
+    id: 9,
+    title: 'Crossword Solver',
+    subtitle: 'C | Backtracking | API Externa',
+    description: 'Resolvedor de palavras cruzadas com backtracking, validando palavras via integração com uma API de dicionário',
+    tags: ['C', 'Backtracking', 'Raylib', 'API REST'],
+    github: 'https://github.com/yasmim-passos/c-projeto2-crossword-solver-ed2',
+    highlights: [
+      'Algoritmo de Backtracking',
+      'Integração com API Externa',
+      'Interface Gráfica (Raylib)'
+    ],
+  }
 
 ];
 
-// Skills Database
-const SKILLS = [
-  { name: 'Python', level: 90, category: 'Backend', icon: '🐍' },
-  { name: 'Java', level: 85, category: 'Backend', icon: '☕' },
-  { name: 'C', level: 80, category: 'Systems', icon: '⚙️' },
-  { name: 'C++', level: 80, category: 'Systems', icon: '⚡' },
-  { name: 'SQL', level: 85, category: 'Database', icon: '🗄️' },
-  { name: 'JavaScript', level: 75, category: 'Frontend', icon: '🌐' },
-  { name: 'HTML/CSS', level: 80, category: 'Frontend', icon: '🎨' },
-  { name: 'Git', level: 85, category: 'Tools', icon: '🔧' },
-  { name: 'Docker', level: 75, category: 'DevOps', icon: '🐳' },
-  { name: 'FastAPI', level: 85, category: 'Framework', icon: '⚡' },
-  { name: 'Spring Boot', level: 80, category: 'Framework', icon: '🍃' },
-  { name: 'PostgreSQL', level: 80, category: 'Database', icon: '🐘' }
-];
-
-// Metrics Calculation
-function calculateTotalMetrics() {
-  return {
-    totalProjects: PROJECTS.length,
-    totalLOC: PROJECTS.reduce((sum, p) => sum + p.metrics.loc, 0),
-    totalFiles: PROJECTS.reduce((sum, p) => sum + p.metrics.files, 0),
-    avgCoverage: Math.round(
-      PROJECTS.reduce((sum, p) => sum + p.metrics.coverage, 0) / PROJECTS.length
-    ),
-    languages: [...new Set(PROJECTS.flatMap(p => p.tags))].length
-  };
-}

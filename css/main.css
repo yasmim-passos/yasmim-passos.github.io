@@ -26,19 +26,7 @@
   line-height: var(--line-height-relaxed);
 }
 
-.project-metrics {
-  display: flex;
-  gap: var(--spacing-md);
-  margin: var(--spacing-md) 0;
-  padding: var(--spacing-md) 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
 
-.metric-small {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-}
 
 .project-highlights {
   margin-top: var(--spacing-md);
@@ -61,12 +49,6 @@
   margin-top: var(--spacing-xs);
 }
 
-.metric-label {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  margin-top: var(--spacing-sm);
-  font-weight: var(--font-weight-medium);
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -85,7 +67,6 @@
 }
 
 .project-card,
-.metric-card,
 .skill-card {
   animation: fadeIn 0.6s ease-out backwards;
 }

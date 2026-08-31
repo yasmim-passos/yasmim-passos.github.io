@@ -32,39 +32,6 @@ if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark');
 }
 
-// METRICS DASHBOARD
-function renderMetrics() {
-  if (typeof calculateTotalMetrics !== "function") return;
-
-  const metrics = calculateTotalMetrics();
-  const t = TRANSLATIONS[getCurrentLanguage()];
-
-  const metricsGrid = document.getElementById('metricsGrid');
-  if (!metricsGrid) return;
-
-  metricsGrid.innerHTML = `
-    <div class="metric-card">
-      <div class="metric-value">${metrics.totalProjects}</div>
-      <div class="metric-label">${t.dashboard.projects}</div>
-    </div>
-
-    <div class="metric-card">
-      <div class="metric-value">${metrics.totalLOC.toLocaleString()}</div>
-      <div class="metric-label">${t.dashboard.loc}</div>
-    </div>
-
-    <div class="metric-card">
-      <div class="metric-value">${metrics.totalFiles}</div>
-      <div class="metric-label">${t.dashboard.files}</div>
-    </div>
-
-    <div class="metric-card">
-      <div class="metric-value">${metrics.languages}</div>
-      <div class="metric-label">${t.dashboard.technologies}</div>
-    </div>
-  `;
-}
-
 // PROJECTS
 async function renderProjects() {
   if (!Array.isArray(PROJECTS)) return;
@@ -104,11 +71,6 @@ async function renderProjects() {
           ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
         </div>
 
-        <div class="project-metrics">
-          <div class="metric-small">📊 ${project.metrics.loc} LOC</div>
-          <div class="metric-small">📁 ${project.metrics.files} files</div>
-        </div>
-
         <div class="project-highlights">
           <strong>${t.projects.highlights || "Highlights"}:</strong>
           <ul>
@@ -128,6 +90,25 @@ async function renderProjects() {
 }
 
 // HARD SKILLS (TECH STACK)
+const SKILL_ICONS = {
+  'Python': 'python.svg',
+  'Java': 'openjdk.svg',
+  '.NET': 'dotnet.svg',
+  'C': 'c.svg',
+  'C++': 'cplusplus.svg',
+  'JavaScript': 'javascript.svg',
+  'HTML': 'html5.svg',
+  'CSS': 'css.svg',
+  'MySQL': 'mysql.svg',
+  'SQL Server': 'mssql.svg',
+  'PostgreSQL': 'postgresql.svg',
+  'FastAPI': 'fastapi.svg',
+  'Spring Boot': 'springboot.svg',
+  'Docker': 'docker.svg',
+  'Git': 'git.svg',
+  'GitHub': 'github.svg'
+};
+
 function renderSkills() {
   const grid = document.getElementById("skillsGrid");
   if (!grid) return;
@@ -138,36 +119,26 @@ function renderSkills() {
   grid.innerHTML = skills.map(skill => `
     <div class="project-card">
       <div class="project-header">
-        <div style="font-size:2rem; margin-bottom:0.5rem;">
-          ${skill.icon}
-        </div>
-
+        <img src="img/icons/${SKILL_ICONS[skill.name]}" class="skill-icon" alt="">
         <h3>${skill.name}</h3>
-
-        <p class="project-subtitle">
-          ${skill.category}
-        </p>
-      </div>
-
-      <div class="skill-progress" style="margin-top:1rem;">
-        <div class="skill-progress-bar"
-             style="width:${skill.level || 90}%">
-        </div>
+        <p class="project-subtitle">${skill.category}</p>
       </div>
     </div>
   `).join("");
 }
 
 // SOFT SKILLS
+const SOFT_SKILL_ICONS = ['lightbulb.svg', 'puzzle.svg', 'book-open.svg', 'message-square.svg'];
+
 function renderSoftSkills() {
   const grid = document.getElementById("softSkillsGrid");
   if (!grid) return;
 
   const skills = TRANSLATIONS[getCurrentLanguage()]?.softSkills?.skills || [];
 
-  grid.innerHTML = skills.map(skill => `
+  grid.innerHTML = skills.map((skill, i) => `
     <div class="skill-card">
-      <div class="skill-icon">${skill.icon}</div>
+      <img src="img/icons/${SOFT_SKILL_ICONS[i]}" class="skill-icon" alt="">
       <h4>${skill.name}</h4>
       <p class="skill-category">${skill.description}</p>
     </div>
@@ -191,7 +162,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // INITIALIZE PAGE
 document.addEventListener('DOMContentLoaded', () => {
-  renderMetrics();
   renderProjects();
   renderSkills();
   renderSoftSkills();

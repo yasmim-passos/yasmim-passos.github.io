@@ -39,7 +39,6 @@ function translatePage(lang) {
     }
   });
 
-  if (typeof renderMetrics === "function") renderMetrics();
   if (typeof renderProjects === "function") {
     renderProjects();
   }
@@ -48,29 +47,6 @@ function translatePage(lang) {
 
   updateLanguageUI(lang);
   localStorage.setItem(STORAGE_KEY, lang);
-}
-
-// Soft Skills Renderer
-function renderSoftSkills() {
-  const grid = document.getElementById("softSkillsGrid");
-  if (!grid) return;
-
-  const skills = TRANSLATIONS[currentLanguage]?.softSkills?.skills || [];
-
-  grid.innerHTML = skills.map(skill => `
-    <div class="project-card">
-
-      <div class="project-header">
-        <div style="font-size:2rem">${skill.icon}</div>
-        <h3>${skill.name}</h3>
-      </div>
-
-      <p class="project-description">
-        ${skill.description}
-      </p>
-
-    </div>
-  `).join("");
 }
 
 // UI Sync (Select + Flags)
