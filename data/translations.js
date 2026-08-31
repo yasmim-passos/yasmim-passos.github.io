@@ -13,8 +13,8 @@ const TRANSLATIONS = {
     hero: {
       badge: 'Disponível para Oportunidades',
       greeting: 'Olá, sou',
-      role: 'Desenvolvedora Full Stack | Especialista em Arquitetura de Software',
-      description: 'Transformo código complexo em soluções elegantes. Especializada em refatoração, design patterns e arquiteturas escaláveis.',
+      role: 'Desenvolvedora e Monitora de Programação | UFS',
+      description: 'Construo software em Python, C# e C, ensino programação a outros alunos da UFS e tenho interesse crescente em dados e IA.',
       viewProjects: 'Ver Projetos',
       contact: 'Entrar em Contato'
     },
@@ -90,8 +90,8 @@ const TRANSLATIONS = {
     hero: {
       badge: 'Available for Opportunities',
       greeting: "Hi, I'm",
-      role: 'Full Stack Developer | Software Architecture Specialist',
-      description: 'I transform complex code into elegant solutions. Specialized in refactoring, design patterns and scalable architectures',
+      role: 'Developer and Programming Teaching Assistant | UFS',
+      description: 'I build software in Python, C# and C, teach programming to other UFS students and have a growing interest in data and AI.',
       viewProjects: 'View Projects',
       contact: 'Get in Touch'
     },
@@ -165,8 +165,8 @@ const TRANSLATIONS = {
     hero: {
       badge: 'Disponible para Oportunidades',
       greeting: 'Hola, soy',
-      role: 'Desarrolladora Full Stack | Especialista en Arquitectura de Software',
-      description: 'Transformo código complejo en soluciones elegantes. Especializada en refactorización, patrones de diseño y arquitecturas escalables.',
+      role: 'Desarrolladora y Monitora de Programación | UFS',
+      description: 'Construyo software en Python, C# y C, enseño programación a otros estudiantes de la UFS y tengo interés creciente en datos e IA.',
       viewProjects: 'Ver Proyectos',
       contact: 'Contactar'
     },
